@@ -1,0 +1,27 @@
+.list-Container{
+    align-items: center;
+    display: flex;
+    ;
+
+}
+
+.button-styles{
+    padding-right: 25px !important;
+    margin: 3px;
+    
+}
+
+Main{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 35px;
+}
+Form{
+    padding-bottom: 50px;
+}
+h1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 45px;
+    
+}

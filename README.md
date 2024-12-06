@@ -8,6 +8,7 @@ In the project directory, you can run:
 
 ### `npm start`
 
+
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
@@ -68,3 +69,44 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+
+# Website With A Search Engine
+Reyes Lawson
+
+## Summary
+
+This application is used for creating a to do list. It alows you to keep your tasks organized by making a list. With interactive features 
+it allows you to mark a task complete or simply deleting the task when finished.
+
+
+
+## Technologies Used
+- reactjs
+- .css
+- .js
+
+
+## User Stories
+- As a user I would like to be able to add objects to a list.
+- As a user I would like to be able to delete objects from a list
+- As a user I would like for the website to be easy to navigate. 
+
+## Wireframes
+
+![alt text](<./public/images/wireframe-todolist1.png>)
+![alt text](<./public/images/wireframe-todolist2.png>)
+
+## Possible Improvement's
+- Add more interactive features such as pictures or gifs.
+- Make more appealing visually.
+- work on overall styling of the app to make it more appealing to use.
+
+## My linkedIn 
+- [www.linkedin.com/in/reyes-lawson-b89a4b324](https://www.linkedin.com/in/reyes-lawson-b89a4b324)
+
+
+
