@@ -1,14 +1,32 @@
 .list-Container{
-    align-items: center;
-    display: flex;
-    ;
+    align-items: center !important;
+    margin: auto;
+    justify-content: center;
 
 }
 
 .button-styles{
     padding-right: 25px !important;
     margin: 3px;
+    background-color: white!important; 
+    color: blue!important; 
+    border: none !important;
+   
+  }
     
+.add-button{
+    background-color: white !important; 
+     color: blue !important; 
+    
+}
+.item-list{
+    
+    align-items: center !important;
+    margin: auto;
+    justify-content: center;
+    width: calc(200px * 4 + 4em);
+ 
+   
 }
 
 Main{
@@ -18,10 +36,28 @@ Main{
 Form{
     padding-bottom: 50px;
 }
+
+.input-container{
+    background-color: #bee21d ;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    display: flex;
+    width: calc(200px * 4 + 4em);
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 35px;
+}
 h1{
+    display: center;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    display:flex;
+    width: calc(200px * 4 + 4em);
     padding-top: 20px;
     padding-bottom: 20px;
     font-weight: bold;
     font-size: 45px;
-    
+
 }

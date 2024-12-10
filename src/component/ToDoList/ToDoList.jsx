@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "./ToDoList.css";
 import { Button, Form, Container } from "react-bootstrap";
-import Offcanvas from 'react-bootstrap/Offcanvas';
 import ListGroup from 'react-bootstrap/ListGroup';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
 
 
 export default function ToDoList() {
@@ -38,47 +39,14 @@ export default function ToDoList() {
 
   const notCompleteYet = (index) => {};
 
- const [show, setShow] = useState(false);
-  
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
-  
-
   return (
-    
-      <>
-        <Button variant="primary" onClick={handleShow}>
-
-           {/* // make a hamburger button */}
-          Fast Links
-          
-        </Button>
-  
-        <Offcanvas show={show} onHide={handleClose}>
-          <Offcanvas.Header closeButton>
-            <Offcanvas.Title>Offcanvas</Offcanvas.Title>
-          </Offcanvas.Header>
-          <Offcanvas.Body>
-            <ol className="nav-list">
-            <>
-            <Button type="" className="" >Today</Button>
-            </>
-            <>    
-            <Button type="" className="" >Tomorrow</Button>
-            </>
-            <>
-            <Button type="" className="" >Contact Us</Button>
-            </>
-            </ol>
-          </Offcanvas.Body>
-        </Offcanvas>
-      
-  
+  <>
     <Container className="list-Container">
       <div className="to-do-list">
         <h1>To Do List</h1>
 
-        <Form onSubmit={addToDo}>
+        <Form onSubmit={addToDo} >
+          <div className="input-container">
           <input
             type="text"
             placeholder="Need To Do!!!"
@@ -88,29 +56,26 @@ export default function ToDoList() {
           <Button type="submit" className="add-button">
             Add More
           </Button>
+          </div>
         </Form>
 
-        <ol>
+        <ol className="item-list">
           {toDoList.map((item, index) => (
-            <li key={index}>
-              <span className="text">{item}</span>
+            <li key={index} className="d-flex flex-row ">
+              <span className="text me-auto p-3">{item}</span>
+              <div >
               <Button
                 className="mark-button button-styles"
                 onClick={() => markedCompleted(index)}>
-                  {/* //add a check mark icon and to display check  */}
-                Complete
+                <i class="bi bi-check-circle-fill fs-2"></i>
               </Button>
-              <Button
-                className="incomplete button-styles"
-                onClick={() => notCompleteYet(index)}>
-                Incomplete
-              </Button>
+             
               <Button
                 className="delete-button button-styles"
-                onClick={() => handleDelete(index)}>
-                  {/* //add a trashcan icon */}
-                Delete
+                onClick={() => handleDelete(index)} >
+                  <i class="bi bi-trash fs-2" ></i>
               </Button>
+              </div>
             </li>
           ))}
         </ol>
