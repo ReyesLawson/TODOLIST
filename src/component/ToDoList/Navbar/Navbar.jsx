@@ -5,6 +5,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { Button } from "react-bootstrap";
+import "./Navbar.css";
 
 function NavBar() {
   const [show, setShow] = useState(false);
@@ -12,9 +13,9 @@ function NavBar() {
   const handleShow = () => setShow(true);
 
   return (
-    <>
-      <Navbar bg="primary" data-bs-theme="dark"className="nav-container">
-        <Container >
+    <div className="nav-container">
+      <Navbar>
+        <Container>
           <Navbar.Brand href="#home">Navbar</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
@@ -24,32 +25,31 @@ function NavBar() {
         </Container>
       </Navbar>
 
-
       <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>Your Lists</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <ol className="nav-list">
-            <>
-              <Button type="" className="">
+          <ol>
+            <div>
+              <Button
+                type="OnClick"
+                className="nav-list-buttons d-flex flex-row fs-4">
                 Today
               </Button>
-            </>
-            <>
-              <Button type="" className="">
+
+              <Button type="" className="nav-list-buttons d-flex flex-row fs-4">
                 Tomorrow
               </Button>
-            </>
-            <>
-              <Button type="" className="">
+
+              <Button type="" className="nav-list-buttons d-flex flex-row fs-4">
                 Contact Us
               </Button>
-            </>
+            </div>
           </ol>
         </Offcanvas.Body>
       </Offcanvas>
-    </>
+    </div>
   );
 }
 

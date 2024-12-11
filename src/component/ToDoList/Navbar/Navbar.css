@@ -1,3 +1,35 @@
-.nav-container{
-    background-color:#bee21d !important;
+.offcanvas-body{
+    background-color: #3e4c6c;
+}
+.offcanvas-header{
+    background-color: rgb(245, 168, 80);
+    
+}
+.nav-list-buttons{
+    background-color:rgb(245, 168, 80);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-radius: 35px;
+    border-color: rgb(245, 168, 80);
+    justify-content: center;
+    margin-top: 15px;
+    align-items: center;
+    color: #3e4c6c;
+    font-weight: bold;
+}
+.offcanvas-title{
+    color:#3e4c6c;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.nav-link{
+    color:whitesmoke;
+}
+.navbar-brand{
+    color:whitesmoke;
 }

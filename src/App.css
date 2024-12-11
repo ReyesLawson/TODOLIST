@@ -1,12 +1,15 @@
 
 .App-header {
-  background-color:#bee21d !important;
+  background-color:#3e4c6c !important;
   height: 50px;
-  color: white;
+  color:whitesmoke !important;
 }
 
-.App-link {
-  color: #61dafb;
+main{
+  background-image:url(../public/images/to-doBackground.jpg);
+  color:whitesmoke;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
 }
-
 

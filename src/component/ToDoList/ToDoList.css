@@ -8,15 +8,21 @@
 .button-styles{
     padding-right: 25px !important;
     margin: 3px;
-    background-color: white!important; 
-    color: blue!important; 
+    background-color: #3e4c6c !important;
+    color: rgb(233, 176, 70)!important; 
     border: none !important;
    
   }
     
 .add-button{
-    background-color: white !important; 
-     color: blue !important; 
+    background-color: rgb(233, 176, 70)!important;  
+    color: #3e4c6c !important;
+    border-radius: 35px !important;
+    border-color: black !important;
+    font-weight: bold !important;
+    margin: 20px;
+
+    
     
 }
 .item-list{
@@ -24,8 +30,12 @@
     align-items: center !important;
     margin: auto;
     justify-content: center;
-    width: calc(200px * 4 + 4em);
- 
+    width: calc(200px * 3 + 4em);
+    color:white;
+    border: 10px solid;
+    border-radius: 35px;
+    border-color: #3e4c6c;
+    background-color: #3e4c6c;
    
 }
 
@@ -38,18 +48,17 @@ Form{
 }
 
 .input-container{
-    background-color: #bee21d ;
+    background-color:#3e4c6c !important; ;
     padding-top: 35px;
     padding-bottom: 35px;
     display: flex;
-    width: calc(200px * 4 + 4em);
+    width: calc(200px * 3 + 4em);
     margin: auto;
     align-items: center;
     justify-content: center;
     border-radius: 35px;
 }
 h1{
-    display: center;
     align-items: center;
     margin: auto;
     justify-content: center;
@@ -57,7 +66,16 @@ h1{
     width: calc(200px * 4 + 4em);
     padding-top: 20px;
     padding-bottom: 20px;
-    font-weight: bold;
-    font-size: 45px;
-
+    font-weight: bold !important;
+    font-size: 55px !important;
+    color:#3e4c6c !important;
+    
+}
+.input-box{
+    border: 3px solid;
+    border-color: rgb(233, 176, 70)!important;
+}
+.completed {
+    text-decoration: line-through;
+    color: black;
 }
