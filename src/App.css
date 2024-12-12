@@ -9,7 +9,7 @@ main{
   background-image:url(../public/images/to-doBackground.jpg);
   color:whitesmoke;
   background-size: cover;
-  background-position: center center;
+  background-position:center;
   background-attachment: fixed;
 }
 

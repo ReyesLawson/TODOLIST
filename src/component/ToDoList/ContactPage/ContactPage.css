@@ -1,7 +1,37 @@
-.Contact{
-    display:flex;
+.Contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  padding-top: 50px;
+}
+
+.contact-container {
+  border: 2px solid;
+  border-color: #3e4c6c !important;
+  background-color: #3e4c6c;
+  margin: 7px;
+  padding: 25px;
+  padding-top: 25px;
+  padding-bottom: 55px;
+  border-color: rgb(251, 206, 70) !important;
+  border: 5px solid;
+  border-radius: 35px;
+}
+
+h2 {
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  display: flex;
+  font-weight: bold !important;
+  font-size: 55px !important;
+  padding-bottom: 40px;
+}
+
+.feedback-container{
+    padding-top: 30px;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    
+    color: whitesmoke;
 }

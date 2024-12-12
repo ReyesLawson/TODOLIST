@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./ToDoList.css";
-import { Button, Form, Container } from "react-bootstrap";
+import { Button, Form, Container, Footer } from "react-bootstrap";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 export default function ToDoList() {
@@ -82,6 +82,23 @@ export default function ToDoList() {
           </ol>
         </div>
       </Container>
+      <footer className="footer container-fluid">
+        <div className="row">
+          <div className="col-sm-2">&copy;GetEr Done</div>
+          <div className="col-sm-7">
+            <div className="social_media">
+              <a href="mailto:reyeslawson89@gmail.com" class="bi bi-envelope">
+              </a>
+              <a href="https://www.facebook.com/" class="bi bi-facebook">
+              </a>
+              <a href="https://www.messenger.com/login/?next=https%3A%2F%2Fwww.messenger.com%2F"
+                class="bi bi-messenger">
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-3">222 To Do, building 2</div>
+        </div>
+      </footer>
     </>
   );
 }

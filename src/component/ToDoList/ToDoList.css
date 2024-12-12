@@ -80,3 +80,31 @@ h1{
     text-decoration: line-through;
     color: black;
 }
+Footer{
+    background-color: rgb(193, 183, 183);
+    color: white;
+    position: relative;
+    font-size: 20px;
+    padding-bottom: 20px;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    
+}
+ .bi-alarm{ 
+    color: rgb(251, 206, 70)!important;
+    font-size: 20px;
+ }
+
+.bi-envelope{
+    color: rgb(251, 206, 70)!important;
+}
+.bi-facebook{
+    color: rgb(251, 206, 70)!important;
+}
+.bi-messenger{
+    color: rgb(251, 206, 70)!important;
+}

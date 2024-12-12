@@ -19,7 +19,7 @@ function NavBar() {
     <div className="nav-container">
       <Navbar>
         <Container>
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+          <Navbar.Brand href="#home"><i className="bi bi-alarm"></i></Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <NavLink to="/contactpage" className="nav-link">Contact Us</NavLink>
@@ -27,12 +27,6 @@ function NavBar() {
           </Nav>
         </Container>
       </Navbar>
-      <Nav>
-        <linkContainer to="/contactpage">
-        <Nav.Link>
-        Contact</Nav.Link></linkContainer>
-      </Nav>
-
       <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>Your Lists</Offcanvas.Title>
@@ -42,15 +36,15 @@ function NavBar() {
             <div>
               <Button
                 type="OnClick"
-                className="nav-list-buttons d-flex flex-row fs-4">
+                className="nav-list-buttons d-flex flex-row fs-4 offcanvas-buttons">
                 Today
               </Button>
 
-              <Button type="" className="nav-list-buttons d-flex flex-row fs-4">
+              <Button type="" className="nav-list-buttons d-flex flex-row fs-4 offcanvas-buttons">
                 Tomorrow
               </Button>
 
-              <Button type="" className="nav-list-buttons d-flex flex-row fs-4">
+              <Button type="" className="nav-list-buttons d-flex flex-row fs-4 offcanvas-buttons">
                 Contact Us
               </Button>
             </div>
