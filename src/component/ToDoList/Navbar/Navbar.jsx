@@ -5,7 +5,10 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { Button } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 import "./Navbar.css";
+
+
 
 function NavBar() {
   const [show, setShow] = useState(false);
@@ -18,12 +21,17 @@ function NavBar() {
         <Container>
           <Navbar.Brand href="#home">Navbar</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#Contact Us">Contact Us</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
+            <NavLink to="/contactpage" className="nav-link">Contact Us</NavLink>
             <Nav.Link onClick={handleShow}>Pick your List</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
+      <Nav>
+        <linkContainer to="/contactpage">
+        <Nav.Link>
+        Contact</Nav.Link></linkContainer>
+      </Nav>
 
       <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./ToDoList.css";
 import { Button, Form, Container } from "react-bootstrap";
-import ListGroup from "react-bootstrap/ListGroup";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 export default function ToDoList() {
@@ -69,13 +68,13 @@ export default function ToDoList() {
                   <Button
                     className="mark-button button-styles"
                     onClick={() => markedCompleted(index)}>
-                    <i class="bi bi-check-circle-fill fs-2"></i>
+                    <i className="bi bi-check-circle-fill fs-2"></i>
                   </Button>
 
                   <Button
                     className="delete-button button-styles"
                     onClick={() => handleDelete(index)}>
-                    <i class="bi bi-trash fs-2"></i>
+                    <i className="bi bi-trash fs-2"></i>
                   </Button>
                 </div>
               </li>

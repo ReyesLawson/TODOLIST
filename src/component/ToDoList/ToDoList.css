@@ -9,13 +9,13 @@
     padding-right: 25px !important;
     margin: 3px;
     background-color: #3e4c6c !important;
-    color: rgb(233, 176, 70)!important; 
+    color: rgb(251, 206, 70)!important;
     border: none !important;
    
   }
     
 .add-button{
-    background-color: rgb(233, 176, 70)!important;  
+    background-color: rgb(251, 206, 70)!important; 
     color: #3e4c6c !important;
     border-radius: 35px !important;
     border-color: black !important;
@@ -42,6 +42,7 @@
 Main{
     font-family:'Times New Roman', Times, serif;
     font-size: 35px;
+    height: 100vh;
 }
 Form{
     padding-bottom: 50px;
@@ -73,7 +74,7 @@ h1{
 }
 .input-box{
     border: 3px solid;
-    border-color: rgb(233, 176, 70)!important;
+    border-color:  rgb(251, 206, 70)!important;
 }
 .completed {
     text-decoration: line-through;
