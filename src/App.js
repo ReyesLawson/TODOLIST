@@ -1,11 +1,11 @@
 import "./App.css";
 import React from "react";
-import ToDoList from "./component/ToDoList/ToDoListForm/ToDoList";
+import ToDoList from "./component/ToDoListForm/ToDoList";
 import "bootstrap/dist/css/bootstrap.min.css";
-import NavBar from "./component/ToDoList/Navbar/Navbar";
+import NavBar from "./component/Navbar/Navbar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import ContactPage from "./component/ToDoList/ContactPage/ContactPage";
-import ToDaysList from "./component/ToDoList/TodaysList/ToDaysList";
+import ContactPage from "./component/ContactPage/ContactPage";
+import ToDaysList from "./component/TodaysList/ToDaysList";
 
 function App() {
   return (
