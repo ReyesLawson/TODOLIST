@@ -12,6 +12,7 @@ export default function ToDoList() {
     { text: "Practice Coding", completed: false },
   ]);
   const [toDo, setToDo] = useState("");
+  const [showIncomplete, setShowIncomplete] = useState(false);
 
   function handleTextChange(event) {
     setToDo(event.target.value);
@@ -23,7 +24,10 @@ export default function ToDoList() {
     setToDoList((prev) => [...prev, { text: toDo, completed: false }]);
     setToDo("");
   };
-
+  const incomplete = (e) => {
+    e.preventDefault();
+    setShowIncomplete((prev) => !prev);
+  };
   const handleDelete = (index) => {
     setToDoList((prev) => prev.filter((item, i) => i !== index));
   };
@@ -35,6 +39,8 @@ export default function ToDoList() {
       )
     );
   };
+  const filteredList = showIncomplete
+   ?toDoList.filter((item)=> !item.completed): toDoList;
 
   return (
     <>
@@ -51,14 +57,20 @@ export default function ToDoList() {
                 value={toDo}
                 onChange={handleTextChange}
               />
+              <div>
               <Button type="submit" className="add-button">
                 Add To List
               </Button>
+              <Button type="submit" className="need-todo-button" onClick={incomplete}>
+                {showIncomplete ? "All" : " Incomplete"}
+                
+              </Button>
+              </div>
             </div>
           </Form>
 
-          <ol className={`${toDoList.length === 0 ? "d-none" : ""} item-list`}>
-            {toDoList.map((item, index) => (
+          <ol className={`${filteredList.length === 0 ? "d-none" : ""} item-list`}>
+            {filteredList.map((item, index) => (
               <li
                 key={index}
                 className={`d-flex flex-row ${

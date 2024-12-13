@@ -16,7 +16,7 @@ const ContactPage = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("hello");
+    console.log("Hello, this is the users information!");
     console.log("First Name:", nameFirst);
     console.log("Last Name:", nameLast);
     console.log("Email:", email);

@@ -37,16 +37,14 @@ function NavBar() {
               <Button
                 type="OnClick"
                 className="nav-list-buttons d-flex flex-row fs-4 offcanvas-buttons">
-                Today
+                <NavLink to="/todayslist" className="nav-link">Today</NavLink>
+                
               </Button>
 
               <Button type="" className="nav-list-buttons d-flex flex-row fs-4 offcanvas-buttons">
-                Tomorrow
+              <NavLink to="/todayslist" className="nav-link">Tomorrow</NavLink>
               </Button>
 
-              <Button type="" className="nav-list-buttons d-flex flex-row fs-4 offcanvas-buttons">
-                Contact Us
-              </Button>
             </div>
           </ol>
         </Offcanvas.Body>

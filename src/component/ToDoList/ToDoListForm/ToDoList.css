@@ -40,9 +40,20 @@
     border-color: black !important;
     font-weight: bold !important;
     margin: 20px;
-    padding: 10px 20px;
-    width: 25;
+    padding: 10px 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
     
+}
+.need-todo-button{
+    background-color: rgb(251, 206, 70)!important; 
+    color: #3e4c6c !important;
+    border-radius: 35px !important;
+    border-color: black !important;
+    font-weight: bold !important;
+    margin: 20px;
+    padding: 10px 30px;
 }
 
 @media(max-width:768px) {
