@@ -8,9 +8,10 @@ import ContactPage from "./component/ToDoList/ContactPage/ContactPage";
 
 function App() {
   return (
+    
     <Router>
-      <div className="App">
-        <header className="App-header">
+      <div className="App container-fluid app-container">
+        <header className="App-header container-fluid d-flex">
           <NavBar />
         </header>
 
@@ -22,6 +23,7 @@ function App() {
         </main>
       </div>
     </Router>
+   
   );
 }
 

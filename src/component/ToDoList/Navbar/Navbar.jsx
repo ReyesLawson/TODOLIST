@@ -16,8 +16,8 @@ function NavBar() {
   const handleShow = () => setShow(true);
 
   return (
-    <div className="nav-container">
-      <Navbar>
+    <div className="nav-container container-fluid">
+      <Navbar className="container-fluid">
         <Container>
           <Navbar.Brand href="#home"><i className="bi bi-alarm"></i></Navbar.Brand>
           <Nav className="me-auto">

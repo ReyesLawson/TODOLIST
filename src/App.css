@@ -3,13 +3,25 @@
   background-color:#3e4c6c !important;
   height: 50px;
   color:whitesmoke !important;
+  display: flex;
+  
+}
+
+.app-container {
+  --bs-gutter-x: 0 !important;
+  --bs-gutter-y: 0 !important;
 }
 
 main{
   background-image:url(../public/images/to-doBackground.jpg);
+  font-family:'Times New Roman', Times, serif;
   color:whitesmoke;
   background-size: cover;
-  background-position:center;
+  background-position:center center;
   background-attachment: fixed;
+  font-size: 35px;
+  min-height: 100vh;
+  padding:50px;
 }
+  
 
