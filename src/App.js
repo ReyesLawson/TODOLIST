@@ -18,7 +18,7 @@ function App() {
 
         <main>
           <Routes>
-            <Route path="/" element={<ToDoList />} />
+            <Route path="/TODOLIST" element={<ToDoList />} />
             <Route path="/contactpage" element={<ContactPage />} />
             <Route path="/todayslist" element={<ToDaysList />} />
           </Routes>
