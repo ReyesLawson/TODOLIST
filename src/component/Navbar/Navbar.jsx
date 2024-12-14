@@ -21,7 +21,7 @@ function NavBar() {
         <Container>
           <Navbar.Brand href="#home"><i className="bi bi-alarm"></i></Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/TODOLIST">Home</Nav.Link>
             <NavLink to="/contactpage" className="nav-link">Contact Us</NavLink>
             <Nav.Link onClick={handleShow}>Pick your List</Nav.Link>
           </Nav>
