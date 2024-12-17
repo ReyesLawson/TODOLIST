@@ -8,8 +8,6 @@ import { Button } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
-
-
 function NavBar() {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
@@ -19,10 +17,14 @@ function NavBar() {
     <div className="nav-container container-fluid">
       <Navbar className="container-fluid">
         <Container>
-          <Navbar.Brand href="#home"><i className="bi bi-alarm"></i></Navbar.Brand>
+          <Navbar.Brand href="#home">
+            <i className="bi bi-alarm"></i>
+          </Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="/TODOLIST">Home</Nav.Link>
-            <NavLink to="/contactpage" className="nav-link">Contact Us</NavLink>
+            <NavLink to="/contactpage" className="nav-link">
+              Contact Us
+            </NavLink>
             <Nav.Link onClick={handleShow}>Pick your List</Nav.Link>
           </Nav>
         </Container>
@@ -37,14 +39,18 @@ function NavBar() {
               <Button
                 type="OnClick"
                 className="nav-list-buttons d-flex flex-row fs-4 offcanvas-buttons">
-                <NavLink to="/todayslist" className="nav-link">Today</NavLink>
-                
+                <NavLink to="/todayslist" className="nav-link">
+                  Today
+                </NavLink>
               </Button>
 
-              <Button type="" className="nav-list-buttons d-flex flex-row fs-4 offcanvas-buttons">
-              <NavLink to="/todayslist" className="nav-link">Tomorrow</NavLink>
+              <Button
+                type=""
+                className="nav-list-buttons d-flex flex-row fs-4 offcanvas-buttons">
+                <NavLink to="/todayslist" className="nav-link">
+                  Tomorrow
+                </NavLink>
               </Button>
-
             </div>
           </ol>
         </Offcanvas.Body>

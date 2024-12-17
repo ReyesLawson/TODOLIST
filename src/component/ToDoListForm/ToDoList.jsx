@@ -1,59 +1,64 @@
 import React, { useState } from "react";
 import "./ToDoList.css";
-import { Button, Form, Container} from "react-bootstrap";
+import { Button, Form, Container } from "react-bootstrap";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 export default function ToDoList() {
   const [state, setState] = useState({
     toDoList: [
-       { text: "Workout", completed: false },
-    { text: "Go To The Grocery Store", completed: false },
-    { text: "Get Gas Before Work", completed: false },
-    { text: "Learn React", completed: false },
-    { text: "Practice Coding", completed: false },
+      { text: "Workout", completed: false },
+      { text: "Go To The Grocery Store", completed: false },
+      { text: "Get Gas Before Work", completed: false },
+      { text: "Learn React", completed: false },
+      { text: "Practice Coding", completed: false },
     ],
-    toDo:"",
-    showIncomplete:false
+    toDo: "",
+    showIncomplete: false,
   });
 
   function handleTextChange(event) {
-    setState(prevState => ({
+    setState((prevState) => ({
       ...prevState,
-      toDo: event.target.value
+      toDo: event.target.value,
     }));
   }
 
   const addToDo = (e) => {
     e.preventDefault();
-    setState((prevState) =>{
-    const updatedList=[...prevState.toDoList, { text: prevState.toDo, completed: false }];
-    console.log(updatedList);
-    return{
-      ...prevState,
-      toDoList: updatedList,
-      toDo:""
-      }
+    setState((prevState) => {
+      const updatedList = [
+        ...prevState.toDoList,
+        { text: prevState.toDo, completed: false },
+      ];
+      console.log(updatedList);
+      return {
+        ...prevState,
+        toDoList: updatedList,
+        toDo: "",
+      };
     });
   };
   const incomplete = (e) => {
     e.preventDefault();
-    setState(prevState=>({ ... prevState,
-    showIncomplete: !prevState.showIncomplete
-  }));
-};
+    setState((prevState) => ({
+      ...prevState,
+      showIncomplete: !prevState.showIncomplete,
+    }));
+  };
   const handleDelete = (index) => {
-    setState(prevState => ({...prevState,
-      toDoList: prevState.toDoList.filter((item,i)=> i !== index)
-  }));
-};
+    setState((prevState) => ({
+      ...prevState,
+      toDoList: prevState.toDoList.filter((item, i) => i !== index),
+    }));
+  };
 
   const markedCompleted = (index) => {
-    setState(prevState =>({
+    setState((prevState) => ({
       ...prevState,
-      toDolist: prevState.toDoList.map((item, i) =>
+      toDoList: prevState.toDoList.map((item, i) =>
         i === index ? { ...item, completed: !item.completed } : item
-      )
-  }));
+      ),
+    }));
   };
   const filteredList = state.showIncomplete
     ? state.toDoList.filter((item) => !item.completed)
